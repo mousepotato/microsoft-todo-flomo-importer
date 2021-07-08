@@ -4,7 +4,7 @@ const fs = require('fs');
 fs.readFileSync('test.txt', 'utf-8').split(/\r?\n/).forEach(function (line) {
     console.log(line)
     let item = "<p>" + line + "</p>"
-    const content = { "title": null, "content": cccc, "file_ids": [], "parent_memo_slug": null, "source": "web" }
+    const content = { "title": null, "content": item, "file_ids": [], "parent_memo_slug": null, "source": "web" }
     console.log(content)
 
     // You can find this using Chrome-->Inspect-->Network--> Copy as fetch
